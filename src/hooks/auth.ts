@@ -84,7 +84,7 @@ export const useAuth = ({
   }) => {
     try {
       await csrf()
-      const response = await axios.post('/api/login', data)
+      const response = await axios.post('/login', data)
       await mutate()
       
       // Get user role from response
